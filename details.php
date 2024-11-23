@@ -23,7 +23,7 @@ if (isset($_GET['id'])) {
         <div id="ant-layout">
         <section class="search-quan">
                 <i class="fas fa-search"></i>
-                <form action="thucdon.php" method="GET">
+                <form action="loaixe.php" method="GET">
                     <input name="search" type="text" placeholder="Tìm món hoặc thức ăn">
                 </form>
             </section>

@@ -9,7 +9,7 @@ require_once('database/dbhelper.php');
         <div id="ant-layout">
             <section class="search-quan">
                 <i class="fas fa-search"></i>
-                <form action="thucdon.php" method="GET">
+                <form action="loaixe.php" method="GET">
                     <input name="search" type="text" placeholder="Tìm xe bạn muốn...">
                 </form>
             </section>
@@ -22,7 +22,7 @@ require_once('database/dbhelper.php');
                     foreach ($categoryList as $item) {
                         echo '
                                     <div class="box">
-                                        <a href="thucdon.php?id_category=' . $item['id'] . '">
+                                        <a href="loaixe.php?id_category=' . $item['id'] . '">
                                             <p>' . $item['name'] . '</p>
                                             <div class="bg"></div>
                                             <img src="images/bg/xeden.png" alt="">
@@ -82,7 +82,7 @@ require_once('database/dbhelper.php');
 
             <section class="restaurants">
                 <div class="title">
-                    <h1>Thực đơn tại quán <span class="green">Thành Coffee</span></h1>
+                    <h1>Tất cả các xe</h1>
                 </div>
                 <div class="product-restaurants">
                     <div class="row">

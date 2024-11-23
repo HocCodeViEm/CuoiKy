@@ -33,12 +33,6 @@
         <a href=""><i class="fab fa-twitter-square"></i></a>
       </div>
     </div>
-    <div class="bottom">
-      <a href=""><img src="images/icon/logo-playstore.svg" alt=""></a>
-      <a href=""><img src="images/icon/logo-appstore.svg" alt=""></a>
-      
-
-    </div>
   </div>
 </footer>
 <style>
