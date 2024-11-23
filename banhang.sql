@@ -133,10 +133,10 @@ INSERT INTO `product` (`id`, `title`, `price`, `number`, `thumbnail`, `content`,
 (18, 'BMW 430i Gran Coupe', 2200000000, 10, 'uploads/bmw3.png', 'Đẳng cấp tạo nên thương hiệu', 3, '2021-07-11 16:07:58', '2021-08-15 16:48:55'),
 (19, 'BMW 4 Series Mui Trần', 2200000000, 46, 'uploads/bmw4.png', 'Đẳng cấp tạo nên thương hiệu', 3, '2021-07-11 16:38:58', '2021-08-15 16:03:56'),
 (20, 'BMW 520i M Sport', 2200000000, 44, 'uploads/bmw5.png', 'Đẳng cấp tạo nên thương hiệu', 3, '2021-07-11 16:12:59', '2021-08-15 16:20:56'),
-(21, 'La Voiture Noire', 2200000000, 15, 'uploads/bgt1.jpg', 'Đẳng cấp tạo nên thương hiệu', 38, '2021-07-13 10:20:53', '2021-08-15 16:42:56'),
-(26, 'Veyron', 2200000000, 100, 'uploads/bgt2.jpg', 'Đẳng cấp tạo nên thương hiệu', 38, '2021-08-15 08:36:27', '2021-08-15 16:57:56'),
-(28, 'Chiron', 2200000000, 90, 'uploads/bgt3.jpg', 'Đẳng cấp tạo nên thương hiệu', 38, '2021-08-15 08:25:31', '2021-08-15 16:13:57'),
-(29, 'Divo', 2200000000, 20, 'uploads/bgt4.jpg', 'Đẳng cấp tạo nên thương hiệu', 38, '2021-08-15 08:19:32', '2021-08-15 16:28:57');
+(21, 'Lamborghini Huracán Tecnica', 6989675000, 15, 'uploads/lb1.jpg', 'Đẳng cấp tạo nên thương hiệu', 38, '2021-07-13 10:20:53', '2021-08-15 16:42:56'),
+(26, 'Lamborghini Revuelto', 22621130000, 100, 'uploads/lb2.jpg', 'Đẳng cấp tạo nên thương hiệu', 38, '2021-08-15 08:36:27', '2021-08-15 16:57:56'),
+(28, 'Lamborghini Urus (SUV)', 5159651000, 90, 'uploads/lb3.jpg', 'Đẳng cấp tạo nên thương hiệu', 38, '2021-08-15 08:25:31', '2021-08-15 16:13:57'),
+(29, 'Lamborghini Centenario', 43900000000, 20, 'uploads/lb4.jpg', 'Đẳng cấp tạo nên thương hiệu', 38, '2021-08-15 08:19:32', '2021-08-15 16:28:57');
 
 -- --------------------------------------------------------
 
