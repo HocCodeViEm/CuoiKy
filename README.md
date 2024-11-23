@@ -1,10 +1,8 @@
 # CuoiKy
 
-
-
 TÀI KHOẢN ADMIN:
-username: AdminThanh 
-password: thanh1010
+username: adminhai
+password: haixi
 
 
 
