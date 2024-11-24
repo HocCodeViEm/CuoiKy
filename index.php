@@ -10,7 +10,7 @@ require_once('database/dbhelper.php');
             <section class="search-quan">
                 <i class="fas fa-search"></i>
                 <form action="loaixe.php" method="GET">
-                    <input name="search" type="text" placeholder="Tìm xe bạn muốn...">
+                    <input name="search" type="text" placeholder="Nhập hãng xe hoặc tên xe">
                 </form>
             </section>
             <section class="main-layout">
@@ -20,12 +20,13 @@ require_once('database/dbhelper.php');
                     $categoryList = executeResult($sql);
                     $index = 1;
                     foreach ($categoryList as $item) {
+                        $image = !empty($item['image']) ? $item['image'] : 'images/bg/xeden.png';
                         echo '
                                     <div class="box">
                                         <a href="loaixe.php?id_category=' . $item['id'] . '">
                                             <p>' . $item['name'] . '</p>
                                             <div class="bg"></div>
-                                            <img src="images/bg/xeden.png" alt="">
+                                            <img src="' . $item['image'] . '" alt="' . $item['name'] . '">
                                         </a>
                                     </div>
                                     ';
@@ -80,11 +81,11 @@ require_once('database/dbhelper.php');
             </section>
             <!-- end Món ngon gần bạn -->
 
-            <section class="restaurants">
+            <section class="allxe">
                 <div class="title">
                     <h1>Tất cả các xe</h1>
                 </div>
-                <div class="product-restaurants">
+                <div class="product-allxe">
                     <div class="row">
                         <?php
                         try {

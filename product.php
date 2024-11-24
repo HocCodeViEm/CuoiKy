@@ -120,11 +120,11 @@ require_once('database/dbhelper.php');
                     </section>
 
                     <!-- end comment -->
-                    <section class="restaurants">
+                    <section class="allxe">
                         <div class="title">
-                            <h1>Thực đơn tại quán <span class="green">Thành Coffee</span></h1>
+                            <h1>Các xe tương tự</h1>
                         </div>
-                        <div class="product-restaurants">
+                        <div class="product-allxe">
                             <div class="row">
                                 <?php
                                 $sql = 'select * from product';

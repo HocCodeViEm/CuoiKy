@@ -14,7 +14,7 @@
             <section class="search-quan">
                 <i class="fas fa-search"></i>
                 <form action="loaixe.php" method="GET">
-                    <input name="search" type="text" placeholder="Tìm xe bạn muốn...">
+                    <input name="search" type="text" placeholder="Nhập hãng xe hoặc tên xe">
                 </form>
             </section>
             <section class="main">

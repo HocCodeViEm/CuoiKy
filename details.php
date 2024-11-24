@@ -24,7 +24,7 @@ if (isset($_GET['id'])) {
         <section class="search-quan">
                 <i class="fas fa-search"></i>
                 <form action="loaixe.php" method="GET">
-                    <input name="search" type="text" placeholder="Tìm món hoặc thức ăn">
+                    <input name="search" type="text" placeholder="Nhập hãng xe hoặc tên xe">
                 </form>
             </section>
         </div>
@@ -103,11 +103,11 @@ if (isset($_GET['id'])) {
                     </div>
                 </aside>
             </section>
-            <section class="restaurants">
+            <section class="allxe">
                 <div class="title">
-                    <h1>Thực đơn tại quán <span class="green">Thành Coffee</span></h1>
+                    <h1>Các xe tương tự</h1>
                 </div>
-                <div class="product-restaurants">
+                <div class="product-allxe">
                     <div class="row">
                         <?php
                         $sql = 'select * from product';
