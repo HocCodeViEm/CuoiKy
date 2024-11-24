@@ -42,7 +42,7 @@ require_once('database/dbhelper.php');
         <main>
             <div class="container">
                 <div id="ant-layout">
-                    <section class="search-quan">
+                    <section class="search-xe">
                         <i class="fas fa-search"></i>
                         <input type="text" placeholder="Tìm món hoặc thức ăn">
                     </section>
@@ -60,14 +60,6 @@ require_once('database/dbhelper.php');
                                     <img src="https://www.highlandscoffee.com.vn/vnt_upload/product/03_2018/TRATHANHDAO.png" alt="">
                                     <div class="about">
                                         <p>Một trải nghiệm thú vị khác! Sự hài hòa giữa vị trà cao cấp, vị sả thanh mát và những miếng đào thơm ngon mọng nước sẽ mang đến cho bạn một thức uống tuyệt vời.</p>
-                                        <div class="size">
-                                            <p>Size:</p>
-                                            <ul>
-                                                <li><a href="">S</a></li>
-                                                <li><a href="">M</a></li>
-                                                <li><a href="">L</a></li>
-                                            </ul>
-                                        </div>
                                         <div class="number">
                                             <span class="number-buy">Số lượng</span>
                                             <input type="number">
@@ -120,11 +112,11 @@ require_once('database/dbhelper.php');
                     </section>
 
                     <!-- end comment -->
-                    <section class="restaurants">
+                    <section class="allxe">
                         <div class="title">
                             <h1>Các xe tương tự</h1>
                         </div>
-                        <div class="product-restaurants">
+                        <div class="product-allxe">
                             <div class="row">
                                 <?php
                                 $sql = 'select * from product';

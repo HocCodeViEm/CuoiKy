@@ -11,7 +11,7 @@
 <main>
     <div class="container">
         <div id="ant-layout">
-            <section class="search-quan">
+            <section class="search-xe">
                 <i class="fas fa-search"></i>
                 <form action="loaixe.php" method="GET">
                     <input name="search" type="text" placeholder="Nhập hãng xe hoặc tên xe">

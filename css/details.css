@@ -25,35 +25,6 @@ section.main section.oder-product .title .main-order .box .about p {
   color: rgb(44, 38, 38);
   font-weight: 500;
 }
-section.main section.oder-product .title .main-order .box .about .size {
-  display: flex;
-}
-section.main section.oder-product .title .main-order .box .about .size p {
-  font-weight: 500;
-}
-section.main section.oder-product .title .main-order .box .about .size ul {
-  display: flex;
-  list-style: none;
-}
-section.main section.oder-product .title .main-order .box .about .size ul li a {
-  padding: 5px 10px;
-  border: 1px solid;
-  margin: 0 5px;
-  text-decoration: none;
-  color: black;
-}
-section.main section.oder-product .title .main-order .box .number {
-}
-section.main
-  section.oder-product
-  .title
-  .main-order
-  .box
-  .about
-  .number
-  .number-buy {
-  font-weight: 500;
-}
 section.main section.oder-product .title .main-order .box .about .price {
   font-weight: 500;
 }

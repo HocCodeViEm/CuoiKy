@@ -41,6 +41,9 @@ require_once('database/dbhelper.php');
             <a class="nav-link" href="category/index.php">Thống kê</a>
         </li>
         <li class="nav-item">
+            <a class="nav-link" href="khachhang/index.php">Quản lý khách hàng</a>
+        </li>
+        <li class="nav-item">
             <a class="nav-link" href="category/index.php">Quản lý danh mục</a>
         </li>
         <li class="nav-item">

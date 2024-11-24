@@ -7,7 +7,7 @@ require_once('database/dbhelper.php');
 <main>
     <div class="container">
         <div id="ant-layout">
-            <section class="search-quan">
+            <section class="search-xe">
                 <i class="fas fa-search"></i>
                 <form action="loaixe.php" method="GET">
                     <input name="search" type="text" placeholder="Nhập hãng xe hoặc tên xe">
@@ -79,13 +79,12 @@ require_once('database/dbhelper.php');
                     </div>
                 </div>
             </section>
-            <!-- end Món ngon gần bạn -->
 
-            <section class="restaurants">
+            <section class="allxe">
                 <div class="title">
                     <h1>Tất cả các xe</h1>
                 </div>
-                <div class="product-restaurants">
+                <div class="product-allxe">
                     <div class="row">
                         <?php
                         try {

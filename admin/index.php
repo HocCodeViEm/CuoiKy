@@ -28,6 +28,9 @@
                     <a class="nav-link active" href="category/index.php">Thống kê</a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link" href="khachhang/index.php">Quản lý khách hàng</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="category/index.php">Quản lý danh mục</a>
                 </li>
                 <li class="nav-item">
@@ -35,6 +38,9 @@
                 </li>
                 <li class="nav-item ">
                     <a class="nav-link " href="dashboard.php">Quản lý đơn hàng</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link " href="/index.php">Quay về trang chủ</a>
                 </li>
             </ul>
         </header>
@@ -61,7 +67,7 @@
                             $result = mysqli_query($conn, $sql);
                             echo '<span>' . mysqli_num_rows($result) . '</span>';
                             ?>
-                            <p><a href="">xem chi tiết➜</a></p>
+                            <p><a href="khachhang/index.php">xem chi tiết➜</a></p>
                         </div>
                         <div class="sp dm">
                             <p>Danh mục</p>

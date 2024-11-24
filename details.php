@@ -15,13 +15,11 @@ if (isset($_GET['id'])) {
     }
 }
 ?>
-<div id="fb-root"></div>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v11.0&appId=264339598396676&autoLogAppEvents=1" nonce="8sTfFiF4"></script>
 <!-- END HEADR -->
 <main>
     <div class="container">
         <div id="ant-layout">
-        <section class="search-quan">
+        <section class="search-xe">
                 <i class="fas fa-search"></i>
                 <form action="loaixe.php" method="GET">
                     <input name="search" type="text" placeholder="Nhập hãng xe hoặc tên xe">
@@ -41,14 +39,6 @@ if (isset($_GET['id'])) {
                             <img src="<?='admin/product/'.$product['thumbnail'] ?>" alt="">
                             <div class="about">
                                 <p><?= $product['content'] ?></p>
-                                <div class="size">
-                                    <p>Size:</p>
-                                    <ul>
-                                        <li><a href="">S</a></li>
-                                        <li><a href="">M</a></li>
-                                        <li><a href="">L</a></li>
-                                    </ul>
-                                </div>
                                 <div class="number">
                                     <span class="number-buy">Số lượng</span>
                                     <input id="num" type="number" value="1" min="1" onchange="updatePrice()">
@@ -103,11 +93,11 @@ if (isset($_GET['id'])) {
                     </div>
                 </aside>
             </section>
-            <section class="restaurants">
+            <section class="allxe">
                 <div class="title">
                     <h1>Các xe tương tự</h1>
                 </div>
-                <div class="product-restaurants">
+                <div class="product-allxe">
                     <div class="row">
                         <?php
                         $sql = 'select * from product';

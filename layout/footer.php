@@ -1,10 +1,10 @@
 <footer>
   <div class="container">
     <div class="logo">
-      <a href=""><img src="images/logoxe.png" alt=""></a>
-      <div class="time" style="padding-left:50%;">
+      <a href=""><img src="images/logo.png" alt="Logo"></a>
+      <div class="time">
         <a href="https://time.is/Vietnam" id="time_is_link" rel="nofollow"></a>
-        <span id="Vietnam_z418" style="font-size:40px"></span>
+        <span id="Vietnam_z418" class="time-display"></span>
         <script src="//widget.time.is/t.js"></script>
         <script>
           time_is_widget.init({
@@ -15,13 +15,12 @@
     </div>
     <div class="link">
       <div class="col">
-        <a href="">Về chúng tôi</a>
-        
+        <a href="/about.php">Về chúng tôi</a>
         <a href="https://hoanghai.site">Blogs</a>
       </div>
       <div class="col">
-        <a href="">Email: taphoasieuxe@gmail.com</a>
-        <a href="">Số điện thoại: 01235678</a>
+        <a href="mailto:taphoasieuxe@gmail.com">Email: taphoasieuxe@gmail.com</a>
+        <a href="tel:+0123456789">Số điện thoại: 0123456789</a>
       </div>
       <div class="col">
         <a href="">Trung tâm hỗ trợ</a>
@@ -35,73 +34,114 @@
     </div>
   </div>
 </footer>
+
 <style>
   footer {
-    background-color: #00B14C;
-    width: 100%;
-    margin: 0px auto;
-    margin-top: 1rem;
+  background-color: #a2a2a2;
+  width: 100%;
+  margin-top: 1rem;
+  color: white;
+  font-family: "Encode Sans SC", sans-serif;
+}
+
+footer .container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+footer .logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px 0;
+  border-bottom: 1px solid white;
+}
+
+footer .logo img {
+  width: 200px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+footer .logo .time {
+  font-family: "Bebas Neue", cursive;
+  color: white;
+  font-size: 40px;
+  background: linear-gradient(90deg, #FFD700, #FF4500);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 10px 20px;
+  border: 2px solid #FFD700;
+  border-radius: 10px;
+  display: inline-block;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  margin-top: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+footer .logo .time:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+}
+
+
+footer .link {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 30px 0;
+  border-bottom: 1px solid white;
+}
+
+footer .link .col a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px 0;
+}
+
+footer .link .col a:hover {
+  color: rgb(224, 247, 222);
+}
+
+footer .link .icon {
+  display: flex;
+  gap: 10px;
+}
+
+footer .link .icon a {
+  font-size: 40px;
+}
+
+footer .bottom {
+  padding: 20px 0;
+  text-align: center;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  footer .link {
+    grid-template-columns: repeat(2, 1fr);
   }
 
-  footer .container {
-    width: 90%;
-    margin: 0px auto;
-    display: flex;
-    flex-flow: column;
+  footer .logo img {
+    width: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  footer .link {
+    grid-template-columns: 1fr;
   }
 
-  footer .container .logo {
-    padding: 20px 0;
-    border-bottom: 1px solid white;
-    display: flex;
-    flex-wrap: wrap-reverse;
+  footer .logo .time {
+    font-size: 30px;
   }
-  footer .container .logo .time{
-    color: white;
-    font-family: "Bebas Neue", cursive;
-  }
+}
 
-  footer .container .link {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    padding: 30px 0;
-    border-bottom: 1px solid white;
-  }
 
-  footer .container .link .col a:hover {
-    cursor: pointer;
-    color: rgb(224, 247, 222);
-  }
-
-  footer .container .link .col a {
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
-    padding: 10px 0;
-    font-family: "Encode Sans SC", sans-serif;
-  }
-
-  footer .container .link .icon a {
-    padding: 10px 10px;
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
-  }
-
-  footer .container .link .icon a i {
-    font-size: 40px;
-  }
-
-  footer .container .link .col {
-    display: flex;
-    flex-flow: column;
-  }
-
-  footer .container .link .icon {
-    display: flex;
-  }
-
-  footer .container .bottom {
-    padding: 20px 0;
-  }
 </style>
