@@ -53,22 +53,22 @@
 </style>
 
 <body>
-    <h2 style="text-align: center;">Hãy liên hệ với chúng tôi nếu các bạn gặp các vấn đề trên Website</h2>
+    <h2 style="text-align: center;">Hãy liên hệ với chúng tôi qua gmail nếu bạn gặp phải các vấn đề trên Website</h2>
     <form method="POST" action="">
         <div class="form-group">
-            <label>Tên của bạn:</label>
+            <label>Tên của bạn :</label>
             <input type="text" name="name" required="required" />
         </div>
         <div class="form-group">
-            <label>Gửi đến gmail:</label>
+            <label>Gửi đến gmail :</label>
             <input type="email" name="email" required="required" />
         </div>
         <div class="form-group">
-            <label>Tên Email</label>
+            <label>Tên Email :</label>
             <input type="text" name="subject" required="required" />
         </div>
         <div class="form-group">
-            <label>Nội dung email</label>
+            <label>Nội dung email :</label>
             <textarea name="message" id="" cols="30" rows="10"></textarea>
         </div>
         <button name="send"> Send</button>
@@ -90,8 +90,8 @@
             $mail->CharSet  = "utf-8";
             $mail->Host = 'smtp.gmail.com';  // khai báo SMTP servers
             $mail->SMTPAuth = true; // Enable authentication
-            $nguoigui = 'hellook332@gmail.com'; // Tài khoản Email
-            $matkhau = 'thanh1010'; // Mật khẩu Email
+            $nguoigui = 'test123@gmail.com'; // Tài khoản Email
+            $matkhau = 'test123'; // Mật khẩu Email
             $mail->SMTPSecure = 'ssl';  // encryption TLS/SSL 
             $mail->Port = 465;  // Port kết nối: khai báo 465 hoặc 587                
 
@@ -102,7 +102,7 @@
             $mail->Password = $matkhau;   // SMTP password
             $mail->setFrom($nguoigui, $tennguoigui); //mail và tên người nhận 
             $to = $email; // Email cần gửi đến lấy từ form nhập
-            $to_name = "Nguyễn Đăng Thành"; // Tên người cần gửi đến
+            $to_name = "Hoàng Minh Hải"; // Tên người cần gửi đến
 
             // Content 
             $mail->addAddress($to, $to_name); //mail và tên người nhận  

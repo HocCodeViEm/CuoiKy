@@ -81,11 +81,11 @@ require_once('database/dbhelper.php');
             </section>
             <!-- end Món ngon gần bạn -->
 
-            <section class="allxe">
+            <section class="restaurants">
                 <div class="title">
                     <h1>Tất cả các xe</h1>
                 </div>
-                <div class="product-allxe">
+                <div class="product-restaurants">
                     <div class="row">
                         <?php
                         try {

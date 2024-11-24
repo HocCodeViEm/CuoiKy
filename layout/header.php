@@ -36,10 +36,6 @@ require_once('database/dbhelper.php');
                                         echo '<li><a href="loaixe.php?id_category=' . $item['id'] . '">'.$item['name'].'</a></li>';
                                     }
                                 ?>
-                                <!-- <li><a href="loaixe.php?page=trasua">Trà sữa</a></li>
-                                <li><a href="loaixe.php?page=monannhe">Món ăn nhẹ</a></li>
-                                <li><a href="loaixe.php?page=banhmi">Bánh mì</a></li>
-                                <li><a href="loaixe.php?page=caphe">Cà phê</a></li> -->
                             </ul>
                         </li>
                         <li><a href="about.php">Về chúng tôi</a></li>
@@ -79,8 +75,8 @@ require_once('database/dbhelper.php');
                             else{
                                 echo '<a style="color:black;" href="">' . $_COOKIE['username'] . '</a>
                             <div class="logout">
-                                <a href="login/changePass.php"><i class="fas fa-exchange-alt"></i>Đổi mật khẩu</a> <br>
-                                <a href="login/logout.php"><i class="fas fa-sign-out-alt"></i>Đăng xuất</a>
+                                <a href="login/changePass.php"><i class="fas fa-exchange-alt"></i>  Đổi mật khẩu</a> <br>
+                                <a href="login/logout.php"><i class="fas fa-sign-out-alt"></i>  Đăng xuất</a>
                             </div>
                             ';
                             }

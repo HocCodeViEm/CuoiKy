@@ -12,7 +12,7 @@ body {
 #wrapper header {
   width: 100%;
   margin: 0px auto;
-  /* background-color: rgb(170, 255, 227); */
+  /* background-color: rgb(210 210 210); */
   padding: 10px 0;
 }
 #wrapper header .container {
@@ -38,16 +38,18 @@ header section.logo a img {
   display: flex;
 }
 #wrapper header .container nav ul li {
-  padding: 10px;
+  margin-top: 20px;
+  padding: 20px;
   list-style: none;
 }
 #wrapper header .container nav ul li a {
+  font-size: 20px;
   text-decoration: none;
   color: rgb(43, 38, 38);
   padding: 10px;
   /* background-color: #f7f7f7; */
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 600;
   font-family: Muli, Futura, Helvetica, Arial, sans-serif;
   position: relative;
 }
@@ -58,7 +60,7 @@ header section.logo a img {
   left: 0px;
   height: 3px;
   width: 100%;
-  background-color: #00b14f;
+  background-color: #858585;
   display: none;
 }
 #wrapper header .container nav ul li a:hover:after {
@@ -75,8 +77,9 @@ header section.logo a img {
   position: absolute;
   display: flex;
   flex-flow: column;
-  left: 0;
-  top: 35px;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 50px;
   width: 150%;
   background-color: rgb(255, 255, 255);
   box-shadow: 0px 0px 5px 0px rgb(212, 212, 212);
@@ -109,7 +112,7 @@ header section.logo a img {
 #wrapper header .container section.menu-right .cart {
   padding: 5px;
   border: 1px solid rgb(196, 196, 196);
-  border-radius: 3px;
+  border-radius: 10px;
   margin: 0 10px;
   position: relative;
 }
@@ -156,7 +159,7 @@ header section.logo a img {
 #wrapper header .container section.menu-right .login {
   padding: 7px;
   border: 1px solid rgb(196, 196, 196);
-  border-radius: 3px;
+  border-radius: 10px;
   margin: 0 10px;
   position: relative;
 }
@@ -196,10 +199,16 @@ opacity: 0.8;
 
 /*reg */
 #wrapper header .container section.menu-right .reg a {
-  padding: 5px;
+  padding: 7px;
   text-decoration: none;
+  border: 1px solid rgb(196, 196, 196);
+  border-radius: 10px;
   color: #676767;
   font-weight: 500;
+}
+#wrapper header .container section.menu-right .reg:hover {
+  box-shadow: 0px 0px 3px 0px grey;
+  cursor: pointer;
 }
 #wrapper header .container section.menu-right .reg:hover .logout{
   display: block;
@@ -398,51 +407,51 @@ section.main section.recently .product-recently .row .col .more .time img {
 }
 /* end mon ngon gần bạn  */
 
-section.main section.allxe {
+section.main section.restaurants {
   padding: 3rem 0;
 }
 
-section.main section.allxe .link a {
+section.main section.restaurants .link a {
   text-decoration: none;
   color: black;
   font-size: 20px;
 }
-section.main section.allxe .title h1 {
+section.main section.restaurants .title h1 {
   font-size: 35px;
   margin: 0px;
   padding: 0px;
   color: black;
 }
-section.main section.allxe .title h1 span {
+section.main section.restaurants .title h1 span {
   color: green;
 }
-section.main section.allxe .product-allxe {
+section.main section.restaurants .product-restaurants {
   padding-top: 2rem;
 }
-section.main section.allxe .product-allxe .row {
+section.main section.restaurants .product-restaurants .row {
   display: grid;
   grid-template-columns: auto auto auto auto;
   grid-column-gap: 30px;
   grid-row-gap: 30px;
 }
-section.main section.allxe .product-allxe .row .col img {
+section.main section.restaurants .product-restaurants .row .col img {
   width: 100%;
   border-radius: 10px;
 }
-section.main section.allxe .product-allxe .row .col img.thumbnail {
+section.main section.restaurants .product-restaurants .row .col img.thumbnail {
   border: 1px solid rgb(76, 78, 85);
   transition: 0.1s;
 }
 section.main
-  section.allxe
-  .product-allxe
+  section.restaurants
+  .product-restaurants
   .row
   .col
   img.thumbnail:hover {
   box-shadow: 0px 0px 5px 0px grey;
 }
 
-section.main section.allxe .product-allxe .row .col .title p {
+section.main section.restaurants .product-restaurants .row .col .title p {
   font-size: 20px;
   font-weight: 600;
   padding: 0px;
@@ -453,7 +462,7 @@ section.main section.allxe .product-allxe .row .col .title p {
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@500;600;700&display=swap");
 
-section.main section.allxe .product-allxe .row .col .price span {
+section.main section.restaurants .product-restaurants .row .col .price span {
   padding: 10px 0;
   color: #676767;
   font-size: 20px;
@@ -462,21 +471,21 @@ section.main section.allxe .product-allxe .row .col .price span {
   font-family: "Bebas Neue", cursive;
 }
 
-section.main section.allxe .product-allxe .row .col .more {
+section.main section.restaurants .product-restaurants .row .col .more {
   display: flex;
   color: #676767;
   padding: 5px 0;
   font-size: 18px;
 }
-section.main section.allxe .product-allxe .row .col .more .star {
+section.main section.restaurants .product-restaurants .row .col .more .star {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 section.main
-  section.allxe
-  .product-allxe
+  section.restaurants
+  .product-restaurants
   .row
   .col
   .more
@@ -485,13 +494,13 @@ section.main
   width: 25px;
   height: 25px;
 }
-section.main section.allxe .product-allxe .row .col .more .time {
+section.main section.restaurants .product-restaurants .row .col .more .time {
   display: flex;
   padding: 0 10px;
 }
 section.main
-  section.allxe
-  .product-allxe
+  section.restaurants
+  .product-restaurants
   .row
   .col
   .more

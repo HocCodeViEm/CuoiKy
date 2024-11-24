@@ -103,11 +103,11 @@ if (isset($_GET['id'])) {
                     </div>
                 </aside>
             </section>
-            <section class="allxe">
+            <section class="restaurants">
                 <div class="title">
                     <h1>Các xe tương tự</h1>
                 </div>
-                <div class="product-allxe">
+                <div class="product-restaurants">
                     <div class="row">
                         <?php
                         $sql = 'select * from product';
