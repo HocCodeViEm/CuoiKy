@@ -4,6 +4,7 @@ TÀI KHOẢN ADMIN:
 username: adminhai
 password: haixi
 
+=======================
 Làm cart.php
     -> cookie thời gian lưu lâu
     -> id sp + số lượng sp

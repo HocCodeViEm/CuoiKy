@@ -21,7 +21,7 @@ require_once('database/dbhelper.php');
         <header>
             <div class="container">
                 <section class="logo">
-                    <a href="index.php"><img src="images/logo.png" alt=""></a>
+                    <a href="index.php"><img src="/images/logo.png" alt=""></a>
                 </section>
                 <nav>
                     <ul>
@@ -44,7 +44,7 @@ require_once('database/dbhelper.php');
                 </nav>
                 <section class="menu-right">
                     <div class="cart">
-                        <a href="cart.php"><img src="images/icon/cart.svg" alt=""></a>
+                        <a href="cart.php"><img src="/images/icon/cart.svg" alt=""></a>
                         <?php
                         $cart = [];
                         if (isset($_COOKIE['cart'])) {

@@ -6,6 +6,7 @@ require_once('../database/dbhelper.php');
 <html lang="en">
 
 <head>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,6 +22,68 @@ require_once('../database/dbhelper.php');
 
   <link rel="stylesheet" href="header.css">
   <title>Đăng ký tài khoản</title>
+  <style>
+    .icon a {
+            color: #ffffff; /* Thay đổi màu của các icon */
+            font-size: 2rem;
+            margin-right: 10px;
+        }
+        .icon a:hover {
+            color: #007bff; /* Màu khi hover */
+        }
+        footer {
+  background-color: #00B14C;
+  width: 100%;
+  margin: 0px auto;
+  margin-top: 1rem;
+}
+footer .container {
+  width: 90%;
+  margin: 0px auto;
+  display: flex;
+  flex-flow: column;
+}
+footer .container .logo {
+  padding: 20px 0;
+  border-bottom: 1px solid white;
+} 
+footer .container .link {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  padding: 30px 0;
+  border-bottom: 1px solid white;
+}
+footer .container .link .col a:hover{
+  cursor: pointer;
+  color: rgb(224, 247, 222);
+}
+footer .container .link .col a{
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px 0;
+  font-family: "Encode Sans SC", sans-serif;
+}
+footer .container .link .icon a{
+  padding: 10px 10px;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+footer .container .link .icon a i{
+  font-size: 40px;
+}
+footer .container .link .col {
+  display: flex;
+  flex-flow: column;
+}
+footer .container .link .icon {
+  display: flex;
+}
+footer .container .bottom{
+  padding: 20px 0;
+}
+  </style>
 </head>
 
 <body>
@@ -34,7 +97,7 @@ require_once('../database/dbhelper.php');
           <ul>
             <li><a href="../index.php">Trang chủ</a></li>
             <li class="nav-cha">
-              <a href="../loaixe.php?page=loaixe">Thực đơn</a>
+              <a href="../loaixe.php?page=loaixe">Loại xe</a>
               <ul class="nav-con">
                 <?php
                 $sql = "SELECT * FROM category";
@@ -43,10 +106,6 @@ require_once('../database/dbhelper.php');
                   echo '<li><a href="../loaixe.php?id_category=' . $item['id'] . '">' . $item['name'] . '</a></li>';
                 }
                 ?>
-                <!-- <li><a href="loaixe.php?page=trasua">Trà sữa</a></li>
-                                <li><a href="loaixe.php?page=monannhe">Món ăn nhẹ</a></li>
-                                <li><a href="loaixe.php?page=banhmi">Bánh mì</a></li>
-                                <li><a href="loaixe.php?page=caphe">Cà phê</a></li> -->
               </ul>
             </li>
             <li><a href="../about.php">Về chúng tôi</a></li>
@@ -175,3 +234,6 @@ require_once('../database/dbhelper.php');
 </body>
 
 </html>
+<?php
+include '../layout/footer.php'; 
+?>

@@ -1,7 +1,7 @@
 <footer>
   <div class="container">
     <div class="logo">
-      <a href=""><img src="images/logo.png" alt="Logo"></a>
+      <a href=""><img src="/images/logo.png" alt="Logo"></a>
       <div class="time">
         <a href="https://time.is/Vietnam" id="time_is_link" rel="nofollow"></a>
         <span id="Vietnam_z418" class="time-display"></span>
